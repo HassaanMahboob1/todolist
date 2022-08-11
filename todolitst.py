@@ -1,4 +1,4 @@
-class item:
+class Item:
     def __init__(self, item_name, status):
         self.item_name = item_name
         self.status = status
@@ -45,8 +45,8 @@ while True:
         item_name = input()
         print("Enter Item status : ")
         status = input()
-        a = item(item_name, status)
-        obj.add_item(a)
+        input_item = Item(item_name, status)
+        obj.add_item(input_item)
 
     if input_num == "2":
         if obj.is_empty():
